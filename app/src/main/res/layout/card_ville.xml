@@ -1,0 +1,50 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="16dp">
+        <ImageView
+
+            android:layout_width="60dp"
+            android:layout_height="62dp"
+            android:layout_toStartOf="@id/name"
+
+
+
+            android:src="@drawable/baseline_map_24" />
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="40sp"
+
+            android:textStyle="bold" />
+
+
+
+
+        <ImageView
+            android:id="@+id/btnRemove"
+            android:layout_width="60dp"
+            android:layout_height="62dp"
+            android:layout_toStartOf="@id/name"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+
+            android:src="@drawable/twotone_delete_24" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
